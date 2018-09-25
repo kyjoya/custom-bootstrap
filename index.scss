@@ -1,0 +1,45 @@
+// Customize Global Bootstrap Font
+$font-family-sans-serif: "Work Sans Regular", Verdana, sans-serif !important;
+$font-family-base:       $font-family-sans-serif !default;
+
+// Bootstrap Theme Colors and Custom Wayfinder Colors
+// Use like: bg-primary or bg-green.
+// Pass to ReactStrap using the color prop: color="primary" or color="green"
+$theme-colors: (
+  "primary":    #152E5F,
+  "secondary": #3399E1,
+  "danger": #B33A3A,
+  "info": #90C0B4,
+  "light": #E7E7E5,
+  "medium": #BFBFB9,
+  "dark": #40403D,
+  "disabled": #807F7B,
+  "white": #fff,
+  "brand-white": #FFFEF6,
+  "highlight": #FF7F7F,
+  "secondary-blue": #99CCF0
+);
+
+// Custom Global Variables
+$brand-primary: #152E5F;
+$brand-secondary: #3399E1;
+$navbar-default-bg: $brand-primary;
+$navbar-default-brand-hover-color: $brand-primary;
+$body-color: $brand-primary;
+$link-color:            $brand-secondary !default;
+$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-decoration: none !default;
+$component-active-bg:   $brand-secondary !default;
+
+$border-radius-base: 100px !default;
+
+$enable-rounded: true;
+$enable-shadows: true;
+$enable-gradients: false;
+$enable-grid-classes: true;
+$enable-print-styles: true;
+
+// the main bootstrap file
+@import "./node_modules/bootstrap/scss/bootstrap";
+// necessary to avoid compilation error
+$icon-font-path: 'bootstrap/fonts/bootstrap/';
